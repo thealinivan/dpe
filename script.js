@@ -21,7 +21,7 @@ priceControl.style.display = "none";
 let targetEcommPrices = [];
 
 //interest factors that ensures minimum profit and where posibile discount in comparison to Amazon prices
-//in case of real integration factors should be stored in the database a altered via admin page for increase price control
+//in case of real integration factors should be stored in the database and modified via admin page for increased price control
 //min 10% interest ensured
 const minInterestFactor = 10;
 //max interest ensuring price is set 5%
@@ -146,11 +146,10 @@ function calculateDynamicPrice(amazonPrice, localAquisitionPrice, localSalePrice
             return minPrice;
         }
     } else {
-        //update price setting only 10% interest
-        const minPrice = localAquisitionPrice + localAquisitionPrice / minInterestFactor;
-        console.log(`Update local sale price (min 10% interest): ${minPrice.toFixed(2)}`);
+        //keep the same price as it is already competitive (lower than Amazon)
+        console.log(`Keep the same local sale price (25% interest): ${localSalePrice.toFixed(2)}`);
         console.log("-----------------------")
-        return minPrice;
+        return localSalePrice;
     }
 
 }
@@ -269,4 +268,3 @@ function renderData(data) {
 
 
 }
-
