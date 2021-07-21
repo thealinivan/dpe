@@ -1,0 +1,138 @@
+body{
+     color:rgb(88, 88, 88);
+     margin:0;
+}
+header {
+    z-index: 100;;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+}
+.navbar{
+    background-color: #5959596c;;
+}
+
+.price-control {
+    text-align: center;
+    padding:20px;
+}
+
+#search-icon{
+    width:20px;
+}
+.container{
+    margin:1rem;
+    border-radius: 5px;
+}
+.ct{
+    margin:2rem 1rem;
+    border-radius: 5px;
+    border:.2px solid rgb(231, 231, 231);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.1), 0 5px 5px rgba(0,0,0,0.1);
+}
+.row{
+    text-align:center;
+}
+.el {
+    padding:1rem;
+}
+.d-block{
+    margin-top: 3rem;
+object-fit: cover;
+width: 90%;
+height: 500px;
+
+}
+.card-btn:hover{
+    color:white;
+}
+.carousel-inner{
+    text-align: center;
+}
+
+.category{
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 10px 18px rgba(0,0,0,0.1), 0 5px 5px rgba(0,0,0,0.1);
+}
+footer{
+    background-color: rgb(49, 49, 49);
+    border-top:10px solid  rgb(65, 65, 65);
+}
+.footer-list{
+    color:rgb(19, 19, 19);
+    padding: 2rem;
+    margin-left: 5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.footer-list >li {
+    transition: all .1s linear;
+}
+
+.footer-list > li:hover{
+     color:rgb(238, 238, 238);
+}
+
+
+#art-title {
+    float:left;
+    margin-top:2%;
+    margin-left:5%;
+    height:90%;
+    padding: 1rem 2rem;
+    /* border-left:.3px solid rgb(231, 231, 231); */
+    
+}
+#art-price, #art-dynamic-price{
+    float:right;
+    padding: .5rem 1rem;
+    background-color: rgb(255, 255, 196);
+    border-radius: 5px;
+    margin:1rem;
+}
+#art-dynamic-price {
+    background-color: rgb(255, 239, 196);
+}
+.price-up{
+    color:rgb(0, 189, 94);
+    float:right;
+    padding: .5rem 1rem;
+    background-color: rgba(0, 189, 94, 0.253);
+    border-radius: 5px;
+    margin:1rem;
+}
+
+.price-down{
+    color:rgba(206, 7, 24);
+    float:right;
+    padding: .5rem 1rem;
+    background-color: rgba(206, 7, 24, 0.253);
+    border-radius: 5px;
+    margin:1rem;
+}
+
+.price-up,
+.price-down {
+    min-width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
