@@ -22,8 +22,14 @@ let targetEcommPrices = [];
 
 //interest factors that ensures minimum profit and where posibile discount in comparison to Amazon prices
 //in case of real integration factors should be stored in the database and modified via admin page for increased price control
+//calculation of interest factor in % = 100/assigned value
+
+// eg: minInterestFactor = 20 result in 100/20 = 5% min interest
 //min 10% interest ensured
 const minInterestFactor = 10;
+
+// eg: maxInterestFactor = 4 results in 100/4 = 25% max interest
+
 //max interest ensuring price is set 5%
 const maxInterestFactor = 20;
 
