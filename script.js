@@ -75,12 +75,12 @@ for (let i = 0; i < cat.length; i++) {
 //fetch api and render
 function fetchAPI(_url, _key, _host) {
     fetch(_url, {
-        "method": "GET",
-        "headers": {
-            "x-rapidapi-key": _key,
-            "x-rapidapi-host": _host
-        }
-    })
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-key": _key,
+                "x-rapidapi-host": _host
+            }
+        })
         .then(response => response.json())
         .then(data => {
             setTargetEcommPrices(data);
@@ -119,7 +119,7 @@ function calculateDynamicPrice(amazonPrice, localAquisitionPrice, localSalePrice
     console.log(`AMAZON sale price: ${amazonPrice.toFixed(2)}`)
     console.log(`Local aquisition price: ${localAquisitionPrice.toFixed(2)}`)
     console.log(`Local sale price ${localSalePrice.toFixed(2)}`)
-    //check for products that Amazon has better price
+        //check for products that Amazon has better price
     if (amazonPrice < localSalePrice) {
         //set limit to target Ecommerce aquisition price with 10% interest
         if (amazonPrice > (localAquisitionPrice + localAquisitionPrice / minInterestFactor)) {
@@ -265,6 +265,5 @@ function renderData(data) {
         render.appendChild(container);
 
     })
-
 
 }
